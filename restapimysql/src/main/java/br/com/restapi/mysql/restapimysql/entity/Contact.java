@@ -1,5 +1,6 @@
 package br.com.restapi.mysql.restapimysql.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -12,13 +13,13 @@ public class Contact {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
 
-    @Collumn(nullable = false)
+    @Column(nullable = false)
     private String nome;
 
-    @Collumn(nullable = false)
+    @Column(nullable = false)
     private String email;
 
-    @Collumn(nullable = false)
+    @Column(nullable = false)
     private String telphone;
     
     private String avatarUrl;
